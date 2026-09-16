@@ -1,0 +1,340 @@
+.blog-post-page {
+  min-height: 100vh;
+  padding: 55px 7% 120px;
+  background: #fffaf0;
+  color: #101c2c;
+}
+
+/* ================================
+   BACK LINK
+================================ */
+
+.blog-post-back {
+  display: inline-flex;
+  align-items: center;
+  margin-bottom: 42px;
+  color: #101c2c;
+  font-size: 0.9rem;
+  font-weight: 700;
+  text-decoration: none;
+  border-bottom: 1px solid #b8893e;
+  padding-bottom: 5px;
+  transition: color 0.2s ease;
+}
+
+.blog-post-back:hover {
+  color: #b8893e;
+}
+
+/* ================================
+   CATEGORY
+================================ */
+
+.blog-post-category {
+  margin: 0 0 16px;
+  color: #9d7032;
+  font-family: "DM Sans", sans-serif;
+  font-size: 0.75rem;
+  font-weight: 800;
+  letter-spacing: 0.18em;
+  text-transform: uppercase;
+}
+
+/* ================================
+   TITLE
+================================ */
+
+.blog-post-page h1 {
+  max-width: 900px;
+  margin: 0;
+  color: #101c2c;
+  font-family: "Playfair Display", serif;
+  font-size: clamp(3.2rem, 6vw, 6.2rem);
+  line-height: 0.98;
+  letter-spacing: -0.05em;
+}
+
+/* ================================
+   EXCERPT
+================================ */
+
+.blog-post-excerpt {
+  max-width: 720px;
+  margin: 28px 0 20px;
+  color: #5c6673;
+  font-family: "DM Sans", sans-serif;
+  font-size: 1.08rem;
+  line-height: 1.7;
+}
+
+/* ================================
+   META
+================================ */
+
+.blog-post-meta {
+  display: flex;
+  align-items: center;
+  flex-wrap: wrap;
+  gap: 9px;
+  margin-bottom: 45px;
+  color: #7b8189;
+  font-family: "DM Sans", sans-serif;
+  font-size: 0.84rem;
+}
+
+.blog-post-meta span:first-child {
+  color: #101c2c;
+  font-weight: 800;
+}
+
+/* ================================
+   READING TIME
+================================ */
+
+.blog-post-reading-time {
+  margin-left: 8px;
+  padding: 6px 10px;
+  border: 1px solid #d5c09d;
+  border-radius: 999px;
+  color: #9d7032 !important;
+  font-size: 0.68rem;
+  font-weight: 800;
+  letter-spacing: 0.08em;
+}
+
+/* ================================
+   FEATURED IMAGE
+================================ */
+
+.blog-post-image {
+  display: block;
+  width: 100%;
+  max-width: 1100px;
+  height: min(58vw, 620px);
+  margin: 0 auto 80px;
+  border-radius: 8px;
+  object-fit: cover;
+}
+
+/* ================================
+   ARTICLE CONTENT
+================================ */
+
+.blog-post-content {
+  max-width: 780px;
+  margin: 0 auto;
+}
+
+.blog-post-content p {
+  margin: 0 0 24px;
+  color: #303944;
+  font-family: "DM Sans", sans-serif;
+  font-size: 1.05rem;
+  line-height: 1.85;
+}
+
+.blog-post-content > p:first-child {
+  color: #101c2c;
+  font-size: 1.18rem;
+  font-weight: 700;
+  line-height: 1.75;
+}
+
+/* ================================
+   ARTICLE HEADINGS
+================================ */
+
+.blog-post-content h2 {
+  position: relative;
+  margin: 70px 0 22px;
+  padding-top: 18px;
+  color: #101c2c;
+  font-family: "Playfair Display", serif;
+  font-size: clamp(2rem, 4vw, 2.8rem);
+  line-height: 1.12;
+  letter-spacing: -0.025em;
+}
+
+.blog-post-content h2::before {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 45px;
+  height: 3px;
+  background: #b8893e;
+}
+
+/* ================================
+   LISTS
+================================ */
+
+.blog-post-content ul {
+  margin: 28px 0 35px;
+  padding: 24px 28px 24px 48px;
+  background: #f3e6d1;
+  border-left: 3px solid #b8893e;
+}
+
+.blog-post-content li {
+  margin-bottom: 12px;
+  color: #303944;
+  font-family: "DM Sans", sans-serif;
+  font-size: 1.02rem;
+  line-height: 1.65;
+}
+
+.blog-post-content li:last-child {
+  margin-bottom: 0;
+}
+
+/* ================================
+   FINAL CTA
+================================ */
+
+.blog-cta {
+  margin-top: 100px;
+  padding: 75px 0 20px;
+  border-top: 1px solid #d5c09d;
+}
+
+.blog-cta-eyebrow {
+  margin: 0 0 18px;
+  color: #9d7032;
+  font-family: "DM Sans", sans-serif;
+  font-size: 0.78rem;
+  font-weight: 700;
+  letter-spacing: 0.16em;
+  text-transform: uppercase;
+}
+
+.blog-cta h2 {
+  max-width: 800px;
+  margin: 0;
+  padding: 0;
+  color: #101c2c;
+  font-family: "Playfair Display", serif;
+  font-size: clamp(2.8rem, 5vw, 5rem);
+  line-height: 1.05;
+  letter-spacing: -0.045em;
+}
+
+.blog-cta h2::before {
+  display: none;
+}
+
+.blog-cta > p:not(.blog-cta-eyebrow) {
+  max-width: 650px;
+  margin: 25px 0 32px;
+  color: #5c6673;
+  font-family: "DM Sans", sans-serif;
+  font-size: 1.05rem;
+  line-height: 1.7;
+}
+
+/* ================================
+   CTA BUTTON
+================================ */
+
+.blog-cta-button {
+  display: inline-block;
+  padding: 15px 22px;
+  background: #101c2c;
+  color: #fffaf0;
+  font-family: "DM Sans", sans-serif;
+  font-size: 0.9rem;
+  font-weight: 700;
+  text-decoration: none;
+  transition:
+    transform 0.2s ease,
+    background 0.2s ease;
+}
+
+.blog-cta-button:hover {
+  background: #1b2b40;
+  transform: translateY(-3px);
+}
+
+/* ================================
+   BACK TO MELophILE
+================================ */
+
+.blog-back-link {
+  display: block;
+  width: fit-content;
+  margin-top: 22px;
+  color: #101c2c;
+  font-family: "DM Sans", sans-serif;
+  font-size: 0.9rem;
+  font-weight: 700;
+  text-decoration: underline;
+  text-underline-offset: 5px;
+}
+
+.blog-back-link:hover {
+  color: #9d7032;
+}
+
+/* ================================
+   TABLET / MOBILE
+================================ */
+
+@media (max-width: 700px) {
+  .blog-post-page {
+    padding: 45px 6% 80px;
+  }
+
+  .blog-post-back {
+    margin-bottom: 40px;
+  }
+
+  .blog-post-page h1 {
+    font-size: clamp(2.6rem, 11vw, 4.2rem);
+  }
+
+  .blog-post-excerpt {
+    font-size: 1rem;
+    line-height: 1.65;
+  }
+
+  .blog-post-meta {
+    margin-bottom: 40px;
+  }
+
+  .blog-post-image {
+    height: 55vw;
+    min-height: 260px;
+    margin-bottom: 55px;
+  }
+
+  .blog-post-content p,
+  .blog-post-content li {
+    font-size: 1rem;
+  }
+
+  .blog-post-content > p:first-child {
+    font-size: 1.12rem;
+  }
+
+  .blog-post-content h2 {
+    margin-top: 42px;
+    font-size: 1.8rem;
+  }
+
+  .blog-post-content ul {
+    padding: 20px 20px 20px 40px;
+  }
+
+  .blog-cta {
+    margin-top: 70px;
+    padding: 55px 0 10px;
+  }
+
+  .blog-cta h2 {
+    font-size: clamp(2.3rem, 10vw, 3.8rem);
+  }
+
+  .blog-cta > p:not(.blog-cta-eyebrow) {
+    font-size: 1rem;
+  }
+}

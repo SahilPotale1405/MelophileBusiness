@@ -1,0 +1,111 @@
+.teachers-section {
+  padding: 120px 7%;
+  background: #eee1cb;
+  color: #101c2c;
+}
+
+.teachers-eyebrow {
+  margin: 0 0 18px;
+  color: #9d7032;
+  font-family: "DM Sans", sans-serif;
+  font-size: 0.78rem;
+  font-weight: 700;
+  letter-spacing: 0.16em;
+  text-transform: uppercase;
+}
+
+.teachers-section h2 {
+  max-width: 750px;
+  margin: 0;
+  font-family: "Playfair Display", serif;
+  font-size: clamp(2.8rem, 5vw, 5.3rem);
+  line-height: 1.05;
+  letter-spacing: -0.045em;
+}
+
+.teachers-grid {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  gap: 24px;
+  margin-top: 54px;
+}
+
+.teacher-card {
+  min-height: 350px;
+  padding: 40px;
+  background: #fffaf0;
+  border: 1px solid #d5c09d;
+  transition: transform 0.25s ease, box-shadow 0.25s ease;
+}
+
+.teacher-card:hover {
+  transform: translateY(-5px);
+  box-shadow: 8px 8px 0 #b8893e;
+}
+
+.teacher-initial {
+  display: grid;
+  width: 64px;
+  height: 64px;
+  place-items: center;
+  border-radius: 50%;
+  background: #b8893e;
+  color: #fffaf0;
+  font-family: "Playfair Display", serif;
+  font-size: 2rem;
+  font-weight: 700;
+}
+
+.teacher-role {
+  margin: 34px 0 7px;
+  color: #9d7032;
+  font-family: "DM Sans", sans-serif;
+  font-size: 0.78rem;
+  font-weight: 700;
+  letter-spacing: 0.12em;
+  text-transform: uppercase;
+}
+
+.teacher-card h3 {
+  margin: 0 0 17px;
+  font-family: "Playfair Display", serif;
+  font-size: 2rem;
+}
+
+.teacher-text {
+  max-width: 470px;
+  margin: 0;
+  color: #5c6673;
+  font-family: "DM Sans", sans-serif;
+  font-size: 1rem;
+  line-height: 1.65;
+}
+
+@media (max-width: 700px) {
+  .teachers-section {
+    padding: 85px 6%;
+  }
+
+  .teachers-grid {
+    grid-template-columns: 1fr;
+  }
+
+  .teacher-card {
+    min-height: auto;
+    padding: 32px;
+  }
+}
+
+@media (max-width: 400px) {
+  .teachers-section {
+    padding: 65px 5%;
+  }
+
+  .teacher-card {
+    padding: 26px;
+  }
+
+  .teachers-section h2 {
+    font-size: clamp(2.5rem, 11vw, 4rem);
+  }
+}

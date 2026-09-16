@@ -1,0 +1,294 @@
+.pricing-section {
+  display: grid;
+  grid-template-columns: minmax(0, 0.9fr) minmax(0, 1.1fr);
+  gap: 90px;
+  align-items: center;
+  padding: 120px 7%;
+  background: #fffaf0;
+  color: #101c2c;
+  overflow: hidden;
+  box-sizing: border-box;
+  width: 100%;
+}
+
+.pricing-heading,
+.price-card {
+  min-width: 0;
+  box-sizing: border-box;
+}
+
+.pricing-eyebrow {
+  margin: 0 0 18px;
+  color: #a57431;
+  font-family: "DM Sans", sans-serif;
+  font-size: 0.78rem;
+  font-weight: 700;
+  letter-spacing: 0.16em;
+  text-transform: uppercase;
+}
+
+.pricing-heading h2 {
+  margin: 0;
+  font-family: "Playfair Display", serif;
+  font-size: clamp(2.8rem, 4.8vw, 5.2rem);
+  line-height: 1.06;
+  letter-spacing: -0.045em;
+  word-break: break-word;
+}
+
+.pricing-heading > p:last-child {
+  max-width: 440px;
+  margin: 25px 0 0;
+  color: #5c6673;
+  font-size: 1.05rem;
+  line-height: 1.65;
+}
+
+.price-card {
+  padding: 50px;
+  border: 1px solid #b8893e;
+  background: #f6ead4;
+  box-shadow: 12px 12px 0 #b8893e;
+}
+
+.price-label {
+  margin: 0;
+  color: #815a24;
+  font-size: 0.8rem;
+  font-weight: 700;
+  letter-spacing: 0.14em;
+  text-transform: uppercase;
+}
+
+.price {
+  display: flex;
+  align-items: baseline;
+  flex-wrap: wrap;
+  gap: 22px;
+  margin-top: 18px;
+}
+
+.old-price {
+  color: #8c7150;
+  font-family: "Playfair Display", serif;
+  font-size: 1.8rem;
+  text-decoration: line-through;
+  text-decoration-thickness: 2px;
+}
+
+.now-label {
+  color: #815a24;
+  font-size: 0.78rem;
+  font-weight: 700;
+  letter-spacing: 0.12em;
+  text-transform: uppercase;
+}
+
+.new-price {
+  display: flex;
+  align-items: flex-start;
+  color: #101c2c;
+  font-family: "Playfair Display", serif;
+}
+
+.new-price span {
+  padding-top: 16px;
+  font-size: 2rem;
+}
+
+.new-price strong {
+  font-size: clamp(4.5rem, 7vw, 7rem);
+  line-height: 0.95;
+  letter-spacing: -0.06em;
+}
+
+.per-month {
+  margin: 7px 0 0;
+  color: #5c6673;
+  font-size: 1.1rem;
+}
+
+.price-line {
+  height: 1px;
+  margin: 34px 0;
+  background: #cda96c;
+}
+
+.price-detail {
+  display: flex;
+  align-items: baseline;
+  justify-content: space-between;
+  gap: 20px;
+  padding: 16px 0;
+  border-bottom: 1px solid #d9bc89;
+}
+
+.price-detail span {
+  font-family: "Playfair Display", serif;
+  font-size: 1.55rem;
+  font-weight: 700;
+  white-space: nowrap;
+}
+
+.price-detail p {
+  margin: 0;
+  color: #5c6673;
+}
+
+.included {
+  margin-top: 30px;
+  color: #5c6673;
+  line-height: 1.5;
+}
+
+.included span {
+  margin-right: 8px;
+  color: #a57431;
+  font-size: 1.4rem;
+}
+
+@media (max-width: 800px) {
+  .pricing-section {
+    grid-template-columns: minmax(0, 1fr);
+    gap: 36px;
+    padding: 65px 5%;
+  }
+
+  .pricing-heading,
+  .price-card {
+    min-width: 0;
+    width: 100%;
+  }
+
+  .pricing-heading h2 {
+    font-size: clamp(2.1rem, 7.5vw, 3.2rem);
+  }
+
+  .price-card {
+    padding: 26px 18px;
+    box-shadow: 6px 6px 0 #b8893e;
+  }
+
+  .price {
+    gap: 12px 16px;
+    margin-top: 14px;
+  }
+
+  .new-price strong {
+    font-size: clamp(2.4rem, 10vw, 3.4rem);
+  }
+
+  .new-price span {
+    font-size: 1.4rem;
+    padding-top: 4px;
+  }
+
+  .old-price {
+    font-size: 1.35rem;
+  }
+
+  .price-line {
+    margin: 22px 0;
+  }
+
+  .price-detail {
+    gap: 8px;
+    padding: 10px 0;
+  }
+
+  .price-detail span {
+    font-size: 1.15rem;
+  }
+
+  .price-detail p {
+    font-size: 0.84rem;
+    text-align: right;
+  }
+
+  .included {
+    margin-top: 20px;
+    font-size: 0.85rem;
+  }
+}
+
+@media (max-width: 400px) {
+  .pricing-section {
+    padding: 45px 4%;
+    gap: 24px;
+  }
+
+  .pricing-heading h2 {
+    font-size: 1.85rem;
+    line-height: 1.05;
+  }
+
+  .pricing-heading > p:last-child {
+    font-size: 0.84rem;
+    line-height: 1.45;
+    margin-top: 10px;
+  }
+
+  .price-card {
+    padding: 18px 14px;
+    box-shadow: 4px 4px 0 #b8893e;
+  }
+
+  .price {
+    gap: 6px 10px;
+    margin-top: 10px;
+  }
+
+  .old-price {
+    font-size: 1.15rem;
+  }
+
+  .new-price strong {
+    font-size: 2.15rem;
+  }
+
+  .new-price span {
+    font-size: 1.1rem;
+    padding-top: 2px;
+  }
+
+  .price-line {
+    margin: 16px 0;
+  }
+
+  .price-detail {
+    gap: 6px;
+    padding: 8px 0;
+  }
+
+  .price-detail span {
+    font-size: 1rem;
+  }
+
+  .price-detail p {
+    font-size: 0.76rem;
+  }
+
+  .included {
+    margin-top: 14px;
+    font-size: 0.78rem;
+    line-height: 1.4;
+  }
+}
+
+.pricing-cta {
+  display: inline-block;
+  margin-top: 28px;
+  padding: 15px 22px;
+  background: #101c2c;
+  color: #fffaf0;
+  font-family: "DM Sans", sans-serif;
+  font-size: 0.92rem;
+  font-weight: 700;
+  text-decoration: none;
+  transition: transform 0.2s ease, background 0.2s ease;
+}
+
+.pricing-cta:hover {
+  background: #1b2b40;
+  transform: translateY(-2px);
+}
