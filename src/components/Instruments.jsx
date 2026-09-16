@@ -1,4 +1,6 @@
 import "./Instruments.css";
+import guitarImage from "../assets/guitar_img.png";
+import keyboardImage from "../assets/keyboard.png";
 
 const instruments = [
   {
@@ -7,7 +9,7 @@ const instruments = [
     name: "Guitar",
     description:
       "Learn from foundation to advanced levels with structured, personalized guidance.",
-    image: "src/assets/guitar_img.png",
+    image: guitarImage,
     icon: "♪",
   },
   {
@@ -16,7 +18,7 @@ const instruments = [
     name: "Piano",
     description:
       "Build your musical skills with structured learning, creativity and confidence.",
-    image: "src/assets/keyboard.png",
+    image: keyboardImage,
     icon: "♫",
   },
 ];
