@@ -56,15 +56,22 @@ a {
 }
 
 .brand {
-  color: #101b2b;
-  font-family: "Playfair Display", serif;
-  font-size: 1.8rem;
-  font-weight: 700;
+  display: flex;
+  align-items: center;
+  gap: 10px;
   text-decoration: none;
+  color: #101c2c;
+  font-family: "Playfair Display", serif;
+  font-size: 28px;
+  font-weight: 700;
 }
 
-.brand span {
-  color: #b4883f;
+.brand-logo {
+  width: 42px;
+  height: 42px;
+  object-fit: cover;
+  border-radius: 8px;
+  display: block;
 }
 
 .site-header .desktop-nav {

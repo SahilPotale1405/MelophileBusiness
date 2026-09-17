@@ -1,4 +1,5 @@
 import { useState } from "react";
+import favicon from "../assets/melophile_logo.png";
 
 function Header() {
   const [menuOpen, setMenuOpen] = useState(false);
@@ -9,7 +10,13 @@ function Header() {
   return (
     <header className="site-header">
       <a className="brand" href="#top" onClick={closeMenu}>
-        Melophile<span>♪</span>
+        <img
+          src={favicon}
+          alt="Melophile"
+          className="brand-logo"
+        />
+
+        <span>Melophile</span>
       </a>
 
       <nav className="desktop-nav">
@@ -41,12 +48,15 @@ function Header() {
           <a href="#classes" onClick={closeMenu}>
             Classes
           </a>
+
           <a href="#teachers" onClick={closeMenu}>
             Teachers
           </a>
+
           <a href="#contact" onClick={closeMenu}>
             Contact
           </a>
+
           <a
             href="tel:+919322210102"
             className="mobile-nav-call"
