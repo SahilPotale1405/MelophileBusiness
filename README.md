@@ -1,19 +1,133 @@
-# React + Vite
+# Melophile – Music Academy Website
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+> A modern, responsive website for Melophile Music Academy, designed to showcase guitar and piano classes, learning programs, instructors, student experiences, and provide an easy way for prospective students to get in touch.
 
-Currently, two official plugins are available:
+🌐 **Live Website:** https://melophile.co.in
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react) uses [Oxc](https://oxc.rs)
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react-swc) uses [SWC](https://swc.rs/)
+---
 
-## React Compiler
+## 📌 Overview
 
-The React Compiler is enabled on this template. See [this documentation](https://react.dev/learn/react-compiler) for more information.
+Melophile is a music academy based in Virar West offering guitar and piano classes.
 
-Note: This will impact Vite dev & build performances.
-You can also try [the experimental native React Compiler support in plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react/README.md#rust-react-compiler) by using `compiler: true` in the plugin options instead of using the Babel plugin.
+This project was developed as a real-world website for the academy with a focus on:
 
-## Expanding the ESLint configuration
+- Premium and responsive UI
+- Clear presentation of music courses
+- Mobile-friendly experience
+- Student inquiry and free-trial booking
+- WhatsApp integration
+- Google Maps integration
+- Dynamic blog content through Sanity CMS
+- Production deployment with a custom domain
 
-If you are developing a production application, we recommend using TypeScript with type-aware lint rules enabled. Check out the [TS template](https://github.com/vitejs/vite/tree/main/packages/create-vite/template-react-ts) for information on how to integrate TypeScript and [`typescript-eslint`](https://typescript-eslint.io) in your project.
+---
+
+## ✨ Features
+
+### 🎸 Guitar & Piano Classes
+Dedicated sections for the instruments offered by Melophile, with information about the learning journey and course levels.
+
+### 📚 Structured Learning Path
+The website presents a structured progression:
+
+- Foundation
+- Beginner
+- Intermediate
+- Advanced
+
+### ⭐ Why Melophile
+Highlights the academy's learning model, including:
+
+- 30-hour monthly learning package
+- Flexible learning schedule
+- Instruments provided
+- Practice and learning opportunities
+- Personal guidance
+
+### 👨‍🏫 Teachers Section
+Introduces the musicians and instructors teaching at Melophile.
+
+### 📝 Blog
+A dynamic blog section powered by **Sanity CMS**, allowing music-related articles and learning resources to be managed separately from the website code.
+
+### 💬 WhatsApp Inquiry
+Students can submit an inquiry through the website and their details are formatted into a WhatsApp message for easy communication.
+
+### 📍 Google Maps
+The contact section provides directions to the academy through Google Maps.
+
+### 📱 Responsive Design
+The website is designed to work across:
+
+- Desktop
+- Laptop
+- Tablet
+- Mobile devices
+
+### 🚀 Production Deployment
+The website is deployed with a custom domain:
+
+**https://melophile.co.in**
+
+---
+
+## 🛠️ Tech Stack
+
+### Frontend
+- React
+- Vite
+- JavaScript
+- HTML5
+- CSS3
+
+### CMS
+- Sanity CMS
+
+### Integrations
+- WhatsApp
+- Google Maps
+- Sanity API
+
+### Deployment
+- Render
+- Custom domain configuration
+
+### Version Control
+- Git
+- GitHub
+
+---
+
+## 🏗️ Project Structure
+
+```text
+Melophile/
+│
+├── public/
+│
+├── src/
+│   ├── assets/
+│   │
+│   ├── components/
+│   │   ├── Hero.jsx
+│   │   ├── Instruments.jsx
+│   │   ├── Benefits.jsx
+│   │   ├── Courses.jsx
+│   │   ├── Teachers.jsx
+│   │   ├── Blog.jsx
+│   │   ├── Reviews.jsx
+│   │   ├── Contact.jsx
+│   │   ├── Footer.jsx
+│   │   └── WhatsAppButton.jsx
+│   │
+│   ├── sanity/
+│   │   └── client.js
+│   │
+│   ├── App.jsx
+│   ├── App.css
+│   └── main.jsx
+│
+├── package.json
+├── vite.config.js
+└── README.md
