@@ -54,7 +54,7 @@ Interested in: ${formData.instrument}`;
 
           <a
             className="map-link"
-            href="https://www.google.com/maps/search/?api=1&query=E%2F403%2C+Gulmohar+Complex%2C+Phase-3%2C+Viva+College+Road%2C+Virar+West"
+            href="https://maps.app.goo.gl/eRRRSutN84ErWXEZ6"
             target="_blank"
             rel="noreferrer"
           >
